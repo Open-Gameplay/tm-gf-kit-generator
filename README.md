@@ -1,0 +1,107 @@
+# kit-generator
+
+Генератор комплектов формы (kit) для GameplayFootball из данных Transfermarkt:
+цвета берутся из профиля клуба на TM, при их отсутствии — извлекаются из логотипа.
+
+Два этапа работы:
+
+1. **Пакетная генерация** — `generate_kits.py`: для каждого клуба собирает палитру и
+   генерирует **6 комплектов** (main/white/black/reserve + gk1/gk2), рендерит PNG 1024×1024
+   по `template_kit.png` из игры.
+2. **Ручной редактор** — `editor/server.py` (web): по очереди показывает клуб с логотипом
+   и цветами, позволяет схематично назначить цвета частям формы и узор футболки для
+   каждого комплекта; «далее» принимает и сгенерированные скриптом сочетания.
+
+Набор китов и правило шортов/гетр: полевые комплекты — футболка в заданный цвет, шорты/гетры
+равны цвету футболки либо нейтралу (вторичный цвет клуба, если он белый/чёрный); белый и
+чёрный комплекты цельные; гк1/гк2 — два ярких цельных вратарских цвета из стандартного пула.
+Выбор форм на матч (конвенция + ручной оверрайд) — `kits/spec.py::pick_match_kits`, см. `NOTES.md`.
+
+**Связанные клубы** (основной + академия + вторая команда) объединяются в группы по имени
+(`kits/linked.py`): дети наследуют палитру и киты корня, правка в редакторе любого члена
+распространяется на всю группу.
+
+## Зависимости
+
+- Python 3.10+
+- Pillow, numpy (`pip install -r requirements.txt`)
+
+## Быстрый старт
+
+```bash
+python -m venv .venv
+.venv/Scripts/pip install -r requirements.txt
+.venv/Scripts/python generate_kits.py \
+    --clubs data_max/full/clubs.json \
+    --logos data_max/images/logos \
+    --template data/GameplayFootball/data/databases/default/template_kit.png \
+    --out out
+```
+
+## Входы
+
+| Что | Откуда |
+|---|---|
+| клубы с цветами и лигами | `data_max/full/clubs.json` (TM-скрейпер) |
+| логотипы `<id>.png` | `data_max/images/logos/` |
+| шаблон кита `template_kit.png` | репозиторий GameplayFootball |
+
+## Выходы
+
+```
+out/
+  specs.json          # спекы всех клубов (палитра + 6 комплектов)
+  <club_id>/
+    main.png  white.png  black.png  reserve.png  gk1.png  gk2.png
+```
+
+## Схема спеки
+
+```json
+{
+  "id": "131",
+  "name": "FC Bayern München",
+  "palette": ["#DC052D", "#FFFFFF", "#1C3F94", "#32CD32", "#FF8C00"],
+  "main":    {"shirt": 0, "shorts": 1, "socks": 1, "pattern": "plain", "pattern_color": null},
+  "white":   {"shirt": 1, "shorts": 1, "socks": 1, "pattern": "plain", "pattern_color": null},
+  "black":   {"shirt": 3, "shorts": 3, "socks": 3, "pattern": "plain", "pattern_color": null},
+  "reserve": {"shirt": 2, "shorts": 1, "socks": 1, "pattern": "plain", "pattern_color": null},
+  "gk1":     {"shirt": 3, "shorts": 3, "socks": 3, "pattern": "plain", "pattern_color": null},
+  "gk2":     {"shirt": 4, "shorts": 4, "socks": 4, "pattern": "plain", "pattern_color": null}
+}
+```
+
+Цвета в спеках — индексы в `palette` клуба (профильные TM-цвета, затем производные из
+логотипа, затем нейтрали; гк-цвета добавляются при необходимости). Узоры:
+`plain`, `stripes`, `hoops`, `sash`, `halves`.
+
+## Выбор китов на матч
+
+```python
+from kits.spec import pick_match_kits
+pick_match_kits(spec_a, spec_b)                     # конвенция (home в main, гость переодевается)
+pick_match_kits(spec_a, spec_b, manual={"b": "reserve"})  # ручной оверрайд
+# -> {"a_out", "b_out", "a_gk", "b_gk"} — имена комплектов
+```
+
+## Редактор
+
+```bash
+.venv/Scripts/python editor/server.py --specs out/specs.json --logos data_max/images/logos
+# http://localhost:9001
+```
+
+Изменения в редакторе сохраняются в `out/specs.json` (клубы помечаются `edited` и не
+перезаписываются при повторной генерации без `--specs`); PNG перегенерируются по спекам.
+
+## Экспорт в игру
+
+```bash
+.venv/Scripts/python export_game.py \
+    --specs out/all/specs.json --kits out/all \
+    --out ../GameplayFootball/data/databases/default/images_teams
+```
+
+Кладутся `images_teams/<league_id>/<club_id>_kit_main/white/black/reserve/gk1/gk2.png`.
+Игра пока умеет только `_kit_01/_02` + общий `goalie_kit.png`; подключение набора китов и
+матчевого выбора — правка `team.cpp`/меню, см. `NOTES.md`.

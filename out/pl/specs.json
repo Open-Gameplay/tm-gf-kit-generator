@@ -1,0 +1,817 @@
+[
+  {
+    "id": "11",
+    "name": "Arsenal FC",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#EF0107",
+      "#FFFFFF",
+      "#9C824A"
+    ],
+    "palette": [
+      "#EF0107",
+      "#FFFFFF",
+      "#9C824A",
+      "#0C246C",
+      "#CC846C",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 1,
+      "shorts": 5,
+      "socks": 5,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 3,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "281",
+    "name": "Manchester City",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#84BBFF",
+      "#FFFFFF",
+      "#84BBFF"
+    ],
+    "palette": [
+      "#84BBFF",
+      "#FFFFFF",
+      "#245484",
+      "#546C9C",
+      "#B4E4FC",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 5,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 2,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "631",
+    "name": "Chelsea FC",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#004793",
+      "#FFFFFF"
+    ],
+    "palette": [
+      "#004793",
+      "#FFFFFF",
+      "#0C0C9C",
+      "#CC9C24",
+      "#5454B4",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 1,
+      "shorts": 5,
+      "socks": 5,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 3,
+      "shorts": 5,
+      "socks": 5,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "31",
+    "name": "Liverpool FC",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#E6001E",
+      "#39403B",
+      "#FFFFFF"
+    ],
+    "palette": [
+      "#E6001E",
+      "#39403B",
+      "#FFFFFF",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 2,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 3,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "985",
+    "name": "Manchester United",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#D9020D",
+      "#FFFFFF",
+      "#000000"
+    ],
+    "palette": [
+      "#D9020D",
+      "#FFFFFF",
+      "#000000",
+      "#FCE40C",
+      "#E43C0C",
+      "#E46C0C"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 1,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 2,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "148",
+    "name": "Tottenham Hotspur",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#FFFFFF",
+      "#001C58",
+      "#FFFFFF"
+    ],
+    "palette": [
+      "#FFFFFF",
+      "#001C58",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 2,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 1,
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "762",
+    "name": "Newcastle United",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#000000",
+      "#FCFCFC"
+    ],
+    "palette": [
+      "#000000",
+      "#FCFCFC",
+      "#0CB4FC",
+      "#0C9CCC",
+      "#846C24",
+      "#E4B43C",
+      "#FFFFFF"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 6,
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 3,
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "1237",
+    "name": "Brighton & Hove Albion",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#0054A6",
+      "#FFFFFF"
+    ],
+    "palette": [
+      "#0054A6",
+      "#FFFFFF",
+      "#3C84CC",
+      "#6C9CCC",
+      "#B4CCE4",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 1,
+      "shorts": 5,
+      "socks": 5,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 5,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "1148",
+    "name": "Brentford FC",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#ff0000",
+      "#ffffff",
+      "#000000"
+    ],
+    "palette": [
+      "#FF0000",
+      "#FFFFFF",
+      "#000000",
+      "#E46C6C",
+      "#E4243C",
+      "#FC9C9C"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 1,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 2,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "989",
+    "name": "AFC Bournemouth",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#BF0C10",
+      "#0C0D0F",
+      "#BEA578"
+    ],
+    "palette": [
+      "#BF0C10",
+      "#0C0D0F",
+      "#BEA578",
+      "#FC2424",
+      "#FFFFFF",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 4,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 5,
+      "shorts": 4,
+      "socks": 4,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "703",
+    "name": "Nottingham Forest",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#E41927",
+      "#2E394E",
+      "#E9E837"
+    ],
+    "palette": [
+      "#E41927",
+      "#2E394E",
+      "#E9E837",
+      "#FFFFFF",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 3,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 4,
+      "shorts": 3,
+      "socks": 3,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "873",
+    "name": "Crystal Palace",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#1B458F",
+      "#C4122E",
+      "#A7A5A6"
+    ],
+    "palette": [
+      "#1B458F",
+      "#C4122E",
+      "#A7A5A6",
+      "#6C84B4",
+      "#FFFFFF",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 4,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 1,
+      "shorts": 4,
+      "socks": 4,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "405",
+    "name": "Aston Villa",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#670E36",
+      "#95BFE5"
+    ],
+    "palette": [
+      "#670E36",
+      "#95BFE5",
+      "#FCE40C",
+      "#B4849C",
+      "#6C546C",
+      "#FFFFFF",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 5,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 2,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "29",
+    "name": "Everton FC",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#0052CC",
+      "#FFFFFF",
+      "#FFD900"
+    ],
+    "palette": [
+      "#0052CC",
+      "#FFFFFF",
+      "#FFD900",
+      "#243C84",
+      "#6C84B4",
+      "#9CB4CC",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 2,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 6,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "399",
+    "name": "Leeds United",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#FAF7F7",
+      "#ffea00",
+      "#0073ff"
+    ],
+    "palette": [
+      "#FAF7F7",
+      "#FFEA00",
+      "#0073FF",
+      "#0C54B4",
+      "#CCCC24",
+      "#3C6C84",
+      "#FFFFFF",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 7,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 2,
+      "shorts": 7,
+      "socks": 7,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "289",
+    "name": "Sunderland AFC",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#EB172C",
+      "#FFFFFF",
+      "#211E1E"
+    ],
+    "palette": [
+      "#EB172C",
+      "#FFFFFF",
+      "#211E1E",
+      "#B46C24",
+      "#FC3C54",
+      "#9C9C24",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 1,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 6,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "931",
+    "name": "Fulham FC",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#ffffff",
+      "#000000",
+      "#CC0000"
+    ],
+    "palette": [
+      "#FFFFFF",
+      "#000000",
+      "#CC0000",
+      "#840C0C"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 1,
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 2,
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "677",
+    "name": "Ipswich Town",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#1100FF",
+      "#FFFFFF",
+      "#FF9900"
+    ],
+    "palette": [
+      "#1100FF",
+      "#FFFFFF",
+      "#FF9900",
+      "#E45454",
+      "#3C6C9C",
+      "#849CCC",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 2,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 6,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "990",
+    "name": "Coventry City",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#42A7FF",
+      "#FFFFFF",
+      "#FFFFFF"
+    ],
+    "palette": [
+      "#42A7FF",
+      "#FFFFFF",
+      "#9C9C9C",
+      "#B48424",
+      "#B4CCCC",
+      "#CC0C0C",
+      "#000000"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 6,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 5,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  },
+  {
+    "id": "3008",
+    "name": "Hull City",
+    "country": "England",
+    "league_id": "GB1",
+    "league": "Premier League",
+    "colors": [
+      "#F5A12D",
+      "#000000",
+      "#F5A12D"
+    ],
+    "palette": [
+      "#F5A12D",
+      "#000000",
+      "#B46C0C",
+      "#84540C",
+      "#FFFFFF"
+    ],
+    "home": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "away": {
+      "shirt": 1,
+      "shorts": 4,
+      "socks": 4,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk": {
+      "shirt": 4,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    }
+  }
+]

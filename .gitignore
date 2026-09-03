@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+
+# rendered kits are regenerable from specs.json (generate_kits.py --specs);
+# specs.json files under out/ are tracked as the source of truth
+out/**/*.png*.bak

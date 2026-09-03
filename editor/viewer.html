@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Kit editor</title>
+<style>
+  :root { --gap: 10px; --border: #333; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", Arial, sans-serif; background: #14161a; color: #ddd; margin: 0; padding: 10px 14px; }
+  .toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; }
+  .toolbar .spacer { flex: 1; }
+  button { background: #2a2f38; color: #eee; border: 1px solid #444; border-radius: 6px; padding: 6px 14px; font-size: 13px; cursor: pointer; }
+  button:hover { background: #3a4150; }
+  .club-header { display: flex; gap: 12px; align-items: center; margin-bottom: 8px; }
+  .club-header img { width: 48px; height: 48px; background: #fff; border-radius: 6px; }
+  .club-header h1 { margin: 0; font-size: 17px; }
+  .club-header .meta { color: #999; font-size: 12px; }
+  .palette { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 6px 0 12px; }
+  .palette .sw { width: 28px; height: 28px; border-radius: 5px; border: 2px solid #444; display: flex; align-items: flex-end; justify-content: flex-end; font-size: 8px; color: rgba(0,0,0,.65); }
+  .kits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .kit { border: 1px solid #2c313a; border-radius: 8px; padding: 10px 12px; background: #1a1d23; min-width: 0; }
+  .kit h2 { margin: 0 0 6px; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; color: #bbb; }
+  .kit img.preview { width: 140px; height: 140px; background: #000; border-radius: 6px; image-rendering: pixelated; display: block; }
+  .row { margin: 4px 0; display: flex; align-items: center; gap: 6px; }
+  .row .label { width: 64px; font-size: 11px; color: #999; flex-shrink: 0; }
+  .row .swatches { display: inline-flex; gap: 3px; flex-wrap: wrap; }
+  .row .sw { width: 18px; height: 18px; border-radius: 3px; border: 2px solid #444; cursor: pointer; }
+  .row .sw.active { border-color: #ffcc00; box-shadow: 0 0 4px #ffcc00; }
+  select { background: #23272f; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 2px 5px; font-size: 12px; }
+  .searchbox { position: relative; }
+  #search { background: #23272f; color: #eee; border: 1px solid #444; border-radius: 6px; padding: 6px 10px; font-size: 13px; width: 260px; }
+  #search::placeholder { color: #777; }
+  #searchresults { position: absolute; top: 100%; left: 0; right: 0; margin-top: 2px; background: #1a1d23; border: 1px solid #444; border-radius: 6px; max-height: 320px; overflow-y: auto; z-index: 20; display: none; }
+  #searchresults .item { padding: 6px 10px; cursor: pointer; font-size: 13px; display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid #242933; }
+  #searchresults .item:last-child { border-bottom: none; }
+  #searchresults .item:hover { background: #2a2f38; }
+  #searchresults .item .lg { color: #777; font-size: 11px; flex-shrink: 0; }
+  .flash { position: fixed; top: 12px; right: 12px; background: #1e5a1e; padding: 8px 14px; border-radius: 6px; display: none; }
+</style>
+</head>
+<body>
+<div class="flash" id="flash">saved</div>
+
+<div class="toolbar">
+  <button id="prev">◀ Prev</button>
+  <span id="pos"></span>
+  <div class="spacer"></div>
+  <div class="searchbox">
+    <input id="search" type="text" placeholder="search club…" autocomplete="off">
+    <div id="searchresults"></div>
+  </div>
+  <button id="next">Next ▶</button>
+</div>
+
+<div class="club-header">
+  <img id="logo" alt="logo">
+  <div>
+    <h1 id="cname"></h1>
+    <div class="meta" id="cmeta"></div>
+  </div>
+</div>
+
+<div class="palette"><span style="color:#999;font-size:12px">palette:</span><span id="palette"></span></div>
+
+<div class="kits" id="kits"></div>
+
+<script>
+const KITS = ["main", "white", "black", "reserve", "gk1", "gk2"];
+const KIT_LABELS = {
+  main: "main (home)", white: "white", black: "black",
+  reserve: "reserve", gk1: "GK 1", gk2: "GK 2",
+};
+let clubs = [];
+let index = 0;
+let current = null;
+
+function hexToCss(h) { return h && h.startsWith("#") ? h : "#FFFFFF"; }
+
+function escapeHtml(s) {
+  return (s || "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+const searchInput = document.getElementById("search");
+const searchResults = document.getElementById("searchresults");
+
+function doSearch() {
+  const q = searchInput.value.trim().toLowerCase();
+  if (!q) { searchResults.style.display = "none"; return; }
+  const matches = clubs.filter(c =>
+    (c.name || "").toLowerCase().includes(q) || (c.id || "").toLowerCase().includes(q)
+  ).slice(0, 15);
+  searchResults.innerHTML = "";
+  matches.forEach(c => {
+    const el = document.createElement("div");
+    el.className = "item";
+    el.innerHTML = `<span>${escapeHtml(c.name)}</span><span class="lg">${escapeHtml(c.league || c.country || "")}</span>`;
+    el.onclick = () => { gotoClub(c.id); };
+    searchResults.appendChild(el);
+  });
+  searchResults.style.display = matches.length ? "block" : "none";
+}
+
+function gotoClub(id) {
+  const i = clubs.findIndex(c => String(c.id) === String(id));
+  if (i >= 0) { index = i; render(); }
+  searchInput.value = "";
+  searchResults.style.display = "none";
+}
+
+searchInput.addEventListener("input", doSearch);
+searchInput.addEventListener("keydown", e => {
+  if (e.key === "Enter") { const first = searchResults.querySelector(".item"); if (first) first.click(); }
+  if (e.key === "Escape") { searchInput.value = ""; searchResults.style.display = "none"; }
+});
+document.addEventListener("click", e => {
+  if (!e.target.closest(".searchbox")) searchResults.style.display = "none";
+});
+
+function bindSwatches(container, palette, getValue, setValue) {
+  const render = () => {
+    container.innerHTML = "";
+    palette.forEach((hex, i) => {
+      const el = document.createElement("div");
+      el.className = "sw" + (i === getValue() ? " active" : "");
+      el.style.background = hexToCss(hex);
+      el.title = i + " " + hex;
+      el.onclick = () => { setValue(i); render(); saveAndRefresh(); };
+      container.appendChild(el);
+    });
+  };
+  render();
+}
+
+function buildKit(kitName) {
+  const spec = current[kitName];
+  const wrap = document.createElement("div");
+  wrap.className = "kit";
+  wrap.innerHTML = `<h2>${KIT_LABELS[kitName] || kitName}</h2><img class="preview" data-kit="${kitName}">`;
+
+  const addRow = (label, partKey) => {
+    const row = document.createElement("div");
+    row.className = "row";
+    row.innerHTML = `<span class="label">${label}</span><span class="swatches"></span>`;
+    wrap.appendChild(row);
+    bindSwatches(row.querySelector(".swatches"), current.palette,
+      () => spec[partKey], (i) => { spec[partKey] = i; });
+  };
+
+  addRow("shirt", "shirt");
+  addRow("shorts", "shorts");
+  addRow("socks", "socks");
+
+  const prow = document.createElement("div");
+  prow.className = "row";
+  prow.innerHTML = `<span class="label">pattern</span><select data-part="pattern"></select><span class="swatches"></span>`;
+  wrap.appendChild(prow);
+  const sel = prow.querySelector("select");
+  PATTERNS.forEach(p => {
+    const o = document.createElement("option");
+    o.value = p; o.textContent = p;
+    sel.appendChild(o);
+  });
+  sel.value = spec.pattern || "plain";
+  sel.onchange = () => { spec.pattern = sel.value; saveAndRefresh(); };
+  bindSwatches(prow.querySelector(".swatches"), current.palette,
+    () => spec.pattern_color, (i) => { spec.pattern_color = i; });
+
+  return wrap;
+}
+
+let PATTERNS = [];
+
+function render() {
+  current = clubs[index];
+  document.getElementById("pos").textContent = `${index + 1} / ${clubs.length} · ${current.name || current.id}`;
+  document.getElementById("cname").textContent = current.name || current.id;
+  document.getElementById("cmeta").textContent = [current.country, current.league].filter(Boolean).join(" · ") +
+    (current.colors && current.colors.length ? " · " + current.colors.join(" ") : "");
+  if (current.linked_root && String(current.linked_root) !== String(current.id)) {
+    const root = clubs.find(c => String(c.id) === String(current.linked_root));
+    document.getElementById("cmeta").textContent += " · linked: " + (root ? root.name : current.linked_root);
+  }
+  document.getElementById("logo").src = "/api/logo/" + current.id;
+  document.getElementById("palette").innerHTML = "";
+  current.palette.forEach((hex, i) => {
+    const el = document.createElement("div");
+    el.className = "sw";
+    el.style.background = hexToCss(hex);
+    el.textContent = i;
+    el.title = hex;
+    document.getElementById("palette").appendChild(el);
+  });
+  const kits = document.getElementById("kits");
+  kits.innerHTML = "";
+  KITS.forEach(k => kits.appendChild(buildKit(k)));
+  refreshPreviews();
+}
+
+function refreshPreviews() {
+  KITS.forEach(k => {
+    const img = document.querySelector(`.kit img.preview[data-kit="${k}"]`);
+    if (img) img.src = "/api/preview/" + current.id + "/" + k + "?t=" + Date.now();
+  });
+}
+
+function flash() {
+  const f = document.getElementById("flash");
+  f.style.display = "block";
+  setTimeout(() => f.style.display = "none", 600);
+}
+
+function saveAndRefresh() {
+  const payload = {};
+  KITS.forEach(k => { payload[k] = current[k]; });
+  fetch("/api/spec/" + current.id, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  }).then(() => { refreshPreviews(); flash(); });
+}
+
+document.getElementById("prev").onclick = () => { if (index > 0) { index--; render(); } };
+document.getElementById("next").onclick = () => { if (index < clubs.length - 1) { index++; render(); } };
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowLeft") document.getElementById("prev").click();
+  if (e.key === "ArrowRight") document.getElementById("next").click();
+});
+
+(async function init() {
+  const [c, p] = await Promise.all([
+    fetch("/api/clubs").then(r => r.json()),
+    fetch("/api/patterns").then(r => r.json()),
+  ]);
+  clubs = c;
+  PATTERNS = p;
+  render();
+})();
+</script>
+</body>
+</html>
