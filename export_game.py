@@ -8,6 +8,8 @@ Game layout (from teamdata.cpp / team.cpp):
     databases/default/images_teams/<league_id>/<club_id>_kit_gk1.png
     databases/default/images_teams/<league_id>/<club_id>_kit_gk2.png
 
+National teams are routed to images_teams/national/<team_id>_kit_*.png.
+
 The game currently loads only _kit_01/_kit_02 + a shared goalie_kit.png; wiring the
 full kit set (and per-match GK selection) is a game-side change (see NOTES.md).
 
@@ -28,7 +30,7 @@ KIT_FILES = {"main": "_kit_main.png", "white": "_kit_white.png", "black": "_kit_
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--specs", required=True)
-    ap.add_argument("--kits", required=True, help="dir with <club_id>/home.png|away.png|gk.png")
+    ap.add_argument("--kits", required=True, help="dir with <club_id>/main.png|white.png|...")
     ap.add_argument("--out", required=True, help="images_teams dir in the game's data")
     args = ap.parse_args()
 
@@ -40,6 +42,8 @@ def main() -> None:
     count = 0
     for rec in specs:
         league = rec.get("league_id") or "unknown"
+        if league == "national":
+            league = "national"
         club_dir = out_root / str(league)
         club_dir.mkdir(parents=True, exist_ok=True)
         for kit, filename in KIT_FILES.items():
@@ -48,7 +52,7 @@ def main() -> None:
                 shutil.copy2(src, club_dir / f"{rec['id']}{filename}")
         count += 1
 
-    print(f"exported {count} clubs to {out_root}")
+    print(f"exported {count} teams to {out_root}")
 
 
 if __name__ == "__main__":

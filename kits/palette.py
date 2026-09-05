@@ -144,3 +144,25 @@ def profile_colors(club: dict) -> list[str]:
     if isinstance(raw, list):
         return [c for c in raw if isinstance(c, str) and c.strip().startswith("#")]
     return [c for c in str(raw).split() if c.strip().startswith("#")]
+
+
+def load_national_teams(teams_json: str | Path) -> list[dict]:
+    """Load national teams from full/national_teams.json into a flat list.
+
+    Each team gets _country=name, _league_id="national", _league="National Teams".
+    ABA color patterns (colors[0] == colors[2]) are collapsed to two colors.
+    """
+    with open(teams_json, encoding="utf-8") as f:
+        teams = json.load(f)
+    result = []
+    for team in teams:
+        # skip defunct teams with no players
+        if not team.get("players"):
+            continue
+        colors = team.get("colors") or []
+        team["_country"] = team.get("name")
+        team["_league_id"] = "national"
+        team["_league"] = "National Teams"
+        team["_colors_cleaned"] = colors
+        result.append(team)
+    return result

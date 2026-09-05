@@ -1,8 +1,13 @@
-"""Batch kit generation for all clubs in the TM data.
+"""Batch kit generation for clubs or national teams in the TM data.
 
 Usage:
+    # clubs (default)
     python generate_kits.py --clubs <clubs.json> --logos <logos_dir> \
         --template <template_kit.png> --out <out_dir> [--league <id>] [--specs <existing.json>]
+
+    # national teams
+    python generate_kits.py --teams <national_teams.json> --logos <emblems_dir> \
+        --template <template_kit.png> --out <out_dir> [--specs <existing.json>]
 
 Without --specs, palettes and specs are built automatically and specs.json is written.
 With --specs, specs are loaded from the given JSON and only PNGs are re-rendered
@@ -17,7 +22,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from kits.linked import find_linked
-from kits.palette import build_palette, load_clubs, profile_colors
+from kits.palette import build_palette, load_clubs, load_national_teams, profile_colors
 from kits.regions import build_region_map
 from kits.render import render_kit
 from kits.spec import auto_specs, KIT_NAMES
@@ -39,26 +44,44 @@ def club_record(club: dict) -> dict:
     }
 
 
+def national_team_record(team: dict) -> dict:
+    colors = team.get("_colors_cleaned") or profile_colors(team)
+    return {
+        "id": str(team["id"]),
+        "name": team["name"],
+        "country": team.get("_country"),
+        "league_id": team.get("_league_id"),
+        "league": team.get("_league"),
+        "colors": colors,
+    }
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--clubs", required=True)
+    group = ap.add_mutually_exclusive_group(required=True)
+    group.add_argument("--clubs", help="path to full/clubs.json")
+    group.add_argument("--teams", help="path to full/national_teams.json")
     ap.add_argument("--logos", required=True)
     ap.add_argument("--template", required=True)
     ap.add_argument("--out", required=True)
-    ap.add_argument("--league", default=None, help="filter by league id")
+    ap.add_argument("--league", default=None, help="filter by league id (clubs only)")
     ap.add_argument("--specs", default=None, help="existing specs.json to re-render")
-    ap.add_argument("--limit", type=int, default=0, help="max clubs to process (debug)")
+    ap.add_argument("--limit", type=int, default=0, help="max items to process (debug)")
     args = ap.parse_args()
 
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
     logos_dir = Path(args.logos)
+    is_national = args.teams is not None
 
-    clubs = load_clubs(args.clubs)
-    if args.league:
-        clubs = [c for c in clubs if c.get("_league_id") == args.league]
+    if is_national:
+        items = load_national_teams(args.teams)
+    else:
+        items = load_clubs(args.clubs)
+        if args.league:
+            items = [c for c in items if c.get("_league_id") == args.league]
     if args.limit:
-        clubs = clubs[: args.limit]
+        items = items[: args.limit]
 
     region_map = build_region_map(args.template)
 
@@ -67,39 +90,45 @@ def main() -> None:
         data = json.loads(Path(args.specs).read_text(encoding="utf-8"))
         existing_specs = {str(r["id"]): r for r in data} if isinstance(data, list) else {str(k): v for k, v in data.items()}
     else:
-        # without --specs, keep clubs the editor marked as edited
+        # without --specs, keep items the editor marked as edited
         auto_path = out_dir / OUT_SPECS
         if auto_path.exists():
             saved = json.loads(auto_path.read_text(encoding="utf-8"))
             existing_specs = {str(r["id"]): r for r in saved if r.get("edited")}
 
     records = []
-    for club in clubs:
-        cid = str(club["id"])
-        rec = club_record(club)
+    for item in items:
+        cid = str(item["id"])
+        rec = national_team_record(item) if is_national else club_record(item)
 
         if existing_specs and cid in existing_specs:
             rec.update(existing_specs[cid])
         else:
-            rec["colors"] = profile_colors(club)
-            logo = logos_dir / f"{cid}.png"
-            rec["palette"] = build_palette(profile_colors(club), logo)
+            if is_national:
+                colors = item.get("_colors_cleaned") or []
+                logo = logos_dir / f"{cid}.png"
+                rec["palette"] = build_palette(colors if colors else None, logo)
+            else:
+                rec["colors"] = profile_colors(item)
+                logo = logos_dir / f"{cid}.png"
+                rec["palette"] = build_palette(profile_colors(item), logo)
             rec.update(auto_specs(rec["palette"]))
 
         records.append(rec)
         print(f"{cid} {rec['name']} palette={len(rec['palette'])}")
 
-    # linked clubs (academy / second team) share the root's kit spec
-    linked_root = find_linked(clubs)
-    by_id = {rec["id"]: rec for rec in records}
-    for rec in records:
-        root_id = linked_root.get(rec["id"], rec["id"])
-        rec["linked_root"] = root_id
-        if root_id != rec["id"] and root_id in by_id:
-            root = by_id[root_id]
-            rec["palette"] = root["palette"]
-            for kit_name in KIT_NAMES:
-                rec[kit_name] = root[kit_name]
+    # linked clubs (academy / second team) share the root's kit spec — clubs only
+    if not is_national:
+        linked_root = find_linked(items)
+        by_id = {rec["id"]: rec for rec in records}
+        for rec in records:
+            root_id = linked_root.get(rec["id"], rec["id"])
+            rec["linked_root"] = root_id
+            if root_id != rec["id"] and root_id in by_id:
+                root = by_id[root_id]
+                rec["palette"] = root["palette"]
+                for kit_name in KIT_NAMES:
+                    rec[kit_name] = root[kit_name]
 
     # render PNGs
     for rec in records:

@@ -3,9 +3,11 @@
 Генератор комплектов формы (kit) для GameplayFootball из данных Transfermarkt:
 цвета берутся из профиля клуба на TM, при их отсутствии — извлекаются из логотипа.
 
+Поддерживает **клубы** и **национальные сборные**.
+
 Два этапа работы:
 
-1. **Пакетная генерация** — `generate_kits.py`: для каждого клуба собирает палитру и
+1. **Пакетная генерация** — `generate_kits.py`: для каждого клуба/сборной собирает палитру и
    генерирует **6 комплектов** (main/white/black/reserve + gk1/gk2), рендерит PNG 1024×1024
    по `template_kit.png` из игры.
 2. **Ручной редактор** — `editor/server.py` (web): по очереди показывает клуб с логотипом
@@ -31,11 +33,20 @@
 ```bash
 python -m venv .venv
 .venv/Scripts/pip install -r requirements.txt
+
+# Клубы
 .venv/Scripts/python generate_kits.py \
     --clubs data_max/full/clubs.json \
     --logos data_max/images/logos \
     --template data/GameplayFootball/data/databases/default/template_kit.png \
     --out out
+
+# Национальные сборные
+.venv/Scripts/python generate_kits.py \
+    --teams data_max/full/national_teams.json \
+    --logos data_max/images/emblems \
+    --template data/GameplayFootball/data/databases/default/template_kit.png \
+    --out out/national
 ```
 
 ## Входы
@@ -43,7 +54,9 @@ python -m venv .venv
 | Что | Откуда |
 |---|---|
 | клубы с цветами и лигами | `data_max/full/clubs.json` (TM-скрейпер) |
-| логотипы `<id>.png` | `data_max/images/logos/` |
+| национальные сборные с цветами | `data_max/full/national_teams.json` (TM-скрейпер) |
+| логотипы клубов `<id>.png` | `data_max/images/logos/` |
+| эмблемы сборных `<id>.png` | `data_max/images/emblems/` |
 | шаблон кита `template_kit.png` | репозиторий GameplayFootball |
 
 ## Выходы
@@ -97,11 +110,18 @@ pick_match_kits(spec_a, spec_b, manual={"b": "reserve"})  # ручной ове�
 ## Экспорт в игру
 
 ```bash
+# Клубы
 .venv/Scripts/python export_game.py \
     --specs out/all/specs.json --kits out/all \
+    --out ../GameplayFootball/data/databases/default/images_teams
+
+# Национальные сборные (экспортируются в images_teams/national/)
+.venv/Scripts/python export_game.py \
+    --specs out/national/specs.json --kits out/national \
     --out ../GameplayFootball/data/databases/default/images_teams
 ```
 
 Кладутся `images_teams/<league_id>/<club_id>_kit_main/white/black/reserve/gk1/gk2.png`.
+Для сборных: `images_teams/national/<team_id>_kit_*.png`.
 Игра пока умеет только `_kit_01/_02` + общий `goalie_kit.png`; подключение набора китов и
 матчевого выбора — правка `team.cpp`/меню, см. `NOTES.md`.
