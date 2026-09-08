@@ -36,15 +36,15 @@ python -m venv .venv
 
 # Клубы
 .venv/Scripts/python generate_kits.py \
-    --clubs data_max/full/clubs.json \
-    --logos data_max/images/logos \
+    --clubs ../transfermarkt_scrapper/data/full/clubs.json \
+    --logos ../transfermarkt_scrapper/data/images/logos \
     --template data/GameplayFootball/data/databases/default/template_kit.png \
     --out out
 
 # Национальные сборные
 .venv/Scripts/python generate_kits.py \
-    --teams data_max/full/national_teams.json \
-    --logos data_max/images/emblems \
+    --teams ../transfermarkt_scrapper/data/full/national_teams.json \
+    --logos ../transfermarkt_scrapper/data/images/emblems \
     --template data/GameplayFootball/data/databases/default/template_kit.png \
     --out out/national
 ```
@@ -53,10 +53,10 @@ python -m venv .venv
 
 | Что | Откуда |
 |---|---|
-| клубы с цветами и лигами | `data_max/full/clubs.json` (TM-скрейпер) |
-| национальные сборные с цветами | `data_max/full/national_teams.json` (TM-скрейпер) |
-| логотипы клубов `<id>.png` | `data_max/images/logos/` |
-| эмблемы сборных `<id>.png` | `data_max/images/emblems/` |
+| клубы с цветами и лигами | `../transfermarkt_scrapper/data/full/clubs.json` (TM-скрейпер) |
+| национальные сборные с цветами | `../transfermarkt_scrapper/data/full/national_teams.json` (TM-скрейпер) |
+| логотипы клубов `<id>.png` | `../transfermarkt_scrapper/data/images/logos/` |
+| эмблемы сборных `<id>.png` | `../transfermarkt_scrapper/data/images/emblems/` |
 | шаблон кита `template_kit.png` | репозиторий GameplayFootball |
 
 ## Выходы
@@ -100,7 +100,7 @@ pick_match_kits(spec_a, spec_b, manual={"b": "reserve"})  # ручной ове�
 ## Редактор
 
 ```bash
-.venv/Scripts/python editor/server.py --specs out/specs.json --logos data_max/images/logos
+.venv/Scripts/python editor/server.py --specs out/specs.json --logos ../transfermarkt_scrapper/data/images/logos
 # http://localhost:9001
 ```
 
@@ -122,6 +122,7 @@ pick_match_kits(spec_a, spec_b, manual={"b": "reserve"})  # ручной ове�
 ```
 
 Кладутся `images_teams/<league_id>/<club_id>_kit_main/white/black/reserve/gk1/gk2.png`.
-Для сборных: `images_teams/national/<team_id>_kit_*.png`.
+Для сборных: `images_teams/national/<team_id>_kit_*.png`. Финальное именование `_kit_01..06`
+и укладку в игровой каталог данных делает конвертер `tm-gf-import` (`builders/files.py`, `KIT_MAP`).
 Игра пока умеет только `_kit_01/_02` + общий `goalie_kit.png`; подключение набора китов и
 матчевого выбора — правка `team.cpp`/меню, см. `NOTES.md`.

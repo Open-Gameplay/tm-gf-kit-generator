@@ -9,7 +9,7 @@
 ## Термины
 
 - **Кит-спека** — JSON-описание комплектов клуба: палитра + по частям (shirt/shorts/socks)
-  и комплектам (home/away/gk) индексы цветов, узор футболки.
+  и комплектам (main/white/black/reserve/gk1/gk2) индексы цветов, узор футболки.
 - **Палитра клуба** — упорядоченный список цветов: профильные TM-цвета, затем извлечённые
   из логотипа, затем нейтрали (белый/чёрный).
 - **Регионы шаблона** — области `template_kit.png`: футболка (color1-регион, y 0–418),
@@ -21,12 +21,13 @@
 ## Как это работает
 
 ```
-data_max/full/clubs.json + images/logos/<id>.png
+transfermarkt_scrapper/data/full/clubs.json (или national_teams.json)
+   + data/images/{logos,emblems}/<id>.png
    + template_kit.png (из GameplayFootball)
    ▼
 palette: профильные цвета -> логотип -> нейтрали
    ▼
-автоподбор спеки (home/away/gk по контрасту)
+автоподбор спеки (main/white/black/reserve/gk1/gk2 по контрасту)
    ▼
 render: регионами + узор + затенение -> PNG 1024×1024
    ▼
@@ -44,3 +45,16 @@ editor: обзор клубов, правка спек, перегенераци
   с извлечёнными палитрами.
 - Детерминизм: без RNG, хэши для разброса не используются; один и тот же вход даёт один
   и тот же выход.
+
+## Место в пайплайне данных
+
+Сводный договор конвейера TM → GameplayFootball — вики GameplayFootball,
+`../GameplayFootball/docs/wiki/пайплайн-данных.md`. Роль: генератор китов, звено между скрейпером и
+конвертером.
+
+- Вход: `transfermarkt_scrapper/data/full/*.json` + `data/images/{logos,emblems}` +
+  `template_kit.png` игры (источники путей — `kits/palette.py`, `load_clubs`/`load_national_teams`).
+- Выход: `out/**/specs.json` + PNG по клубу/сборной; `export_game.py` раскладывает
+  `images_teams/<лига>/<клуб>_kit_{main,white,black,reserve,gk1,gk2}.png`. Финальное именование
+  `_kit_01..06` и укладку в игровой каталог делает конвертер `tm-gf-import`
+  (`builders/files.py`, `KIT_MAP`).
