@@ -5,6 +5,44 @@ Append-only. Типы записей: `session`, `build`, `fix`, `decision`, `de
 
 ---
 
+## [2026-09-08] fix | линковка youth-клубов: «Under 18» и цепочки к неверному родителю
+
+Пользователь заметил: после ручной правки команд Serie A стиль не распространился на
+команды Under 18. Две причины в `kits/linked.py`:
+
+1. **Суффикс `under18` отсутствовал** — «Inter Under 18» → `interunder18` не оканчивался
+   ни на один известный суффикс (`u18`/`sub18`), поэтому все 20 команд Campionato Under 18
+   (ITJ7) оставались самокорневыми и не наследовали киты.
+2. **Фолбэк родителя выбирал любую команду с тем же префиксом** — «Fiorentina Primavera»
+   (база `fiorentina`) не находила точного «Fiorentina», и кандидатом становилась
+   «Fiorentina Under 18»; так Primavera/U20 цеплялись к Under-18 вместо основного клуба
+   (Roma U20 → Roma Under 18, Lecce Primavera → Lecce Under 18, ...).
+
+Исправления:
+- В `RESERVE_SUFFIXES` добавлены `under17`..`under23` (идут раньше коротких `uNN`).
+- `_parent_of` переписан: родитель ищется только среди **основных** клубов (исключаются
+  youth-имена через новые `RESERVE_PARENT_SUFFIXES` — без «b/c/2/3», чтобы не срезать
+  хвосты «FC/BC/AC»), сначала точное/префиксное совпадение, затем подстрока (например
+  «fiorentina» в «acffiorentina»), ближайшее имя побеждает. Дополнительно исключаются
+  родители, чьё имя содержит **полное** имя клуба-ребёнка как подстроку — иначе «Rangers FC»/
+  «Ha Noi FC»/«Delhi FC» цеплялись бы к «Cove Rangers FC»/«Cong An Ha Noi FC»/«Sudeva Delhi FC».
+
+Ре-линковка итальянских клубов в `out/all/specs.json` (dry-run → apply): 43 клуба,
+20 Under 18 получили правильного родителя, 8 неверных цепочек Primavera/U20 исправлены
+(Roma U20→AS Roma, Fiorentina/Sassuolo/Lecce/Monza/Cesena/Lazio → основной клуб),
+плюс Empoli/AlbinoLeffe Primavera доехали до своих корней. Дети наследуют палитру+киты
+корня, помечаются `edited`. Редактор перезапущен на исправленных данных.
+
+## [2026-09-08] deploy | экспорт полного набора китов в игру
+
+После ручной правки Serie A (и исправления линковки) перенесены все киты в
+GameplayFootball: перерисованы PNG для 265 изменившихся клубов (`edited` ∪ Италия) и
+скопированы комплекты 4406 клубов + 219 сборных в `images_teams/<league>/<club>_kit_01..06.png`
+в обе копии данных (`data/databases/default` и `build/Release/databases/default`). Именование
+и маппинг — как в `tm-gf-import/builders/files.py` (`slugify` через unidecode,
+main→kit_01 … gk2→kit_06). Проверено: `campionato_under_18/inter_under_18_kit_01.png` бит-в-бит
+совпадает с `serie_a/inter_milan_kit_01.png` (наследование сработало).
+
 ## [2026-09-03] session | первый прототип: батч-генератор + web-редактор
 
 Создан standalone-проект kit-generator по итогам обсуждения: генерация скриптом, затем

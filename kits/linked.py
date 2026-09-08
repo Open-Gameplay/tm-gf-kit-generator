@@ -15,14 +15,23 @@ from collections import defaultdict
 RESERVE_SUFFIXES = [
     "nextgen", "mestalla", "castilla", "atleticob", "atletico", "atletic", "filial",
     "primavera", "sub23", "sub21", "sub20", "sub19", "sub18", "sub17",
-    "u23", "u21", "u20", "u19", "u18", "u17", "iii", "ii", "b", "c", "2", "3",
+    "u23", "u21", "u20", "u19", "u18", "u17",
+    "under23", "under21", "under20", "under19", "under18", "under17",
+    "iii", "ii", "b", "c", "2", "3",
 ]
 SHORT_SUFFIXES = ("b", "c", "2", "3")
+# suffixes that unambiguously mark a youth/reserve team (not "b"/"c"/"2"/"3",
+# which collide with "FC"/"BC"/"AC" tails of main-club names)
+RESERVE_PARENT_SUFFIXES = [s for s in RESERVE_SUFFIXES if s not in SHORT_SUFFIXES]
 
 
 def normalize(name: str) -> str:
     s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
     return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+def _is_reserve_name(norm: str) -> bool:
+    return any(norm.endswith(s) and len(norm) > len(s) + 3 for s in RESERVE_PARENT_SUFFIXES)
 
 
 def _parent_of(norm_name: str, norm2id: dict, cid: str) -> str | None:
@@ -31,10 +40,21 @@ def _parent_of(norm_name: str, norm2id: dict, cid: str) -> str | None:
             base = norm_name[: -len(suf)]
             if base in norm2id and norm2id[base] != cid:
                 return norm2id[base]
-            candidates = [cid2 for n2, cid2 in norm2id.items()
-                          if n2.startswith(base) and cid2 != cid]
-            if candidates:
-                return candidates[0]
+            # Parent candidates are main clubs only (never another youth team),
+            # preferring the closest name: exact/prefix match first, then substring
+            # (e.g. "acffiorentina" for base "fiorentina"). Shortest wins.
+            def _pick(match):
+                cands = [(n2, c2) for n2, c2 in norm2id.items()
+                         if c2 != cid and not _is_reserve_name(n2)
+                         and norm_name not in n2 and match(n2)]
+                if cands:
+                    return min(cands, key=lambda t: len(t[0]))[1]
+                return None
+            parent = _pick(lambda n2: n2.startswith(base))
+            if parent is None:
+                parent = _pick(lambda n2: base in n2)
+            if parent:
+                return parent
             break
     return None
 

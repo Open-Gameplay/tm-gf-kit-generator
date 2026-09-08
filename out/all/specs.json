@@ -32493,10 +32493,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 1,
@@ -32513,11 +32513,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 5,
+      "shirt": 0,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 7,
@@ -32533,7 +32533,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "720"
+    "linked_root": "720",
+    "edited": true
   },
   {
     "id": "336",
@@ -32558,10 +32559,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 1,
@@ -32578,11 +32579,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 2,
+      "shirt": 0,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 7,
@@ -32598,7 +32599,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "336"
+    "linked_root": "336",
+    "edited": true
   },
   {
     "id": "294",
@@ -32643,9 +32645,9 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 4,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -32663,7 +32665,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "294"
+    "linked_root": "294",
+    "edited": true
   },
   {
     "id": "1075",
@@ -33675,9 +33678,9 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 4,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -33695,7 +33698,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "294"
+    "linked_root": "294",
+    "edited": true
   },
   {
     "id": "10331",
@@ -33720,10 +33724,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 1,
@@ -33740,11 +33744,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 5,
+      "shirt": 0,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 7,
@@ -33760,7 +33764,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "720"
+    "linked_root": "720",
+    "edited": true
   },
   {
     "id": "2432",
@@ -33850,10 +33855,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 1,
@@ -33870,11 +33875,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 2,
+      "shirt": 0,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 7,
@@ -33890,7 +33895,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "336"
+    "linked_root": "336",
+    "edited": true
   },
   {
     "id": "6912",
@@ -34830,9 +34836,9 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 4,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -34850,7 +34856,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "294"
+    "linked_root": "294",
+    "edited": true
   },
   {
     "id": "68110",
@@ -35728,10 +35735,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 1,
@@ -35748,11 +35755,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 2,
+      "shirt": 0,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 7,
@@ -35768,7 +35775,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "336"
+    "linked_root": "336",
+    "edited": true
   },
   {
     "id": "99764",
@@ -47428,8 +47436,8 @@
       "shirt": 0,
       "shorts": 0,
       "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 2,
@@ -47439,18 +47447,18 @@
       "pattern_color": null
     },
     "black": {
-      "shirt": 6,
-      "shorts": 6,
-      "socks": 6,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 0,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "reserve": {
-      "shirt": 1,
+      "shirt": 0,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 7,
@@ -47466,7 +47474,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "75506"
+    "linked_root": "75506",
+    "edited": true
   },
   {
     "id": "4128",
@@ -178667,8 +178676,8 @@
     "league": "Primavera 1",
     "colors": [],
     "palette": [
-      "#FCB40C",
-      "#9C2424",
+      "#FFB22E",
+      "#9E142B",
       "#CC9C0C",
       "#B45424",
       "#FFFFFF",
@@ -178677,9 +178686,9 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
+      "shirt": 1,
+      "shorts": 1,
+      "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -178698,9 +178707,9 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -178718,7 +178727,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "76094"
+    "linked_root": "12",
+    "edited": true
   },
   {
     "id": "8505",
@@ -178732,11 +178742,11 @@
       "#5C2180"
     ],
     "palette": [
-      "#6C3C84",
+      "#5C2180",
+      "#FFFFFF",
       "#E4CCE4",
       "#E43C24",
       "#9C84B4",
-      "#FFFFFF",
       "#000000",
       "#00BFFF",
       "#32CD32"
@@ -178749,23 +178759,23 @@
       "pattern_color": null
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
+      "shirt": 1,
+      "shorts": 1,
+      "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
     "black": {
-      "shirt": 5,
+      "shirt": 0,
       "shorts": 5,
       "socks": 5,
       "pattern": "plain",
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 2,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -178783,7 +178793,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "75901"
+    "linked_root": "430",
+    "edited": true
   },
   {
     "id": "10958",
@@ -178807,10 +178818,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 4,
+      "socks": 4,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 4,
@@ -178820,16 +178831,16 @@
       "pattern_color": null
     },
     "black": {
-      "shirt": 5,
+      "shirt": 0,
       "shorts": 5,
       "socks": 5,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 3,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 7,
+      "shorts": 7,
+      "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -178847,7 +178858,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "5"
+    "linked_root": "5",
+    "edited": true
   },
   {
     "id": "11008",
@@ -178868,9 +178880,9 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
       "pattern_color": null
     },
     "white": {
@@ -178884,15 +178896,15 @@
       "shirt": 2,
       "shorts": 2,
       "socks": 2,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 0
     },
     "reserve": {
       "shirt": 1,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "halves",
+      "pattern_color": 0
     },
     "gk1": {
       "shirt": 3,
@@ -178908,7 +178920,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "506"
+    "linked_root": "506",
+    "edited": true
   },
   {
     "id": "8492",
@@ -178973,7 +178986,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "8492"
+    "linked_root": "749",
+    "edited": true
   },
   {
     "id": "14848",
@@ -178995,14 +179009,14 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 5,
+      "socks": 5,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 5,
-      "shorts": 5,
+      "shorts": 6,
       "socks": 5,
       "pattern": "plain",
       "pattern_color": null
@@ -179015,10 +179029,76 @@
       "pattern_color": null
     },
     "reserve": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "stripes",
+      "pattern_color": 1
+    },
+    "gk1": {
+      "shirt": 7,
+      "shorts": 7,
+      "socks": 7,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk2": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "1025",
+    "edited": true
+  },
+  {
+    "id": "19114",
+    "name": "Sassuolo Primavera",
+    "country": "Italy",
+    "league_id": "IJ1",
+    "league": "Primavera 1",
+    "colors": [
+      "#099902",
+      "#000000"
+    ],
+    "palette": [
+      "#099902",
+      "#000000",
+      "#0CB454",
+      "#0C843C",
+      "#243C24",
+      "#240C24",
+      "#FFFFFF",
+      "#FFD700",
+      "#FF8C00"
+    ],
+    "main": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "stripes",
+      "pattern_color": 1
+    },
+    "white": {
+      "shirt": 6,
+      "shorts": 1,
+      "socks": 6,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "black": {
       "shirt": 1,
       "shorts": 1,
       "socks": 1,
       "pattern": "plain",
+      "pattern_color": null
+    },
+    "reserve": {
+      "shirt": 0,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "stripes",
       "pattern_color": null
     },
     "gk1": {
@@ -179035,71 +179115,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "1025"
-  },
-  {
-    "id": "19114",
-    "name": "Sassuolo Primavera",
-    "country": "Italy",
-    "league_id": "IJ1",
-    "league": "Primavera 1",
-    "colors": [
-      "#099902",
-      "#000000"
-    ],
-    "palette": [
-      "#0CB454",
-      "#0C843C",
-      "#243C24",
-      "#240C24",
-      "#FFFFFF",
-      "#000000",
-      "#FFD700",
-      "#FF8C00"
-    ],
-    "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
-      "shirt": 6,
-      "shorts": 6,
-      "socks": 6,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk2": {
-      "shirt": 7,
-      "shorts": 7,
-      "socks": 7,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "linked_root": "75867"
+    "linked_root": "6574",
+    "edited": true
   },
   {
     "id": "8517",
@@ -179124,11 +179141,11 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 3,
+      "shorts": 3,
+      "socks": 3,
+      "pattern": "halves",
+      "pattern_color": 2
     },
     "white": {
       "shirt": 6,
@@ -179145,11 +179162,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 3,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "halves",
+      "pattern_color": 2
     },
     "gk1": {
       "shirt": 8,
@@ -179165,7 +179182,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "252"
+    "linked_root": "252",
+    "edited": true
   },
   {
     "id": "5618",
@@ -179179,58 +179197,61 @@
       "#080857"
     ],
     "palette": [
-      "#0C2454",
+      "#F7FF08",
+      "#E80000",
+      "#080857",
       "#6C6C54",
       "#9C846C",
       "#9C0C24",
       "#FFFFFF",
       "#000000",
       "#00BFFF",
-      "#FFD700"
+      "#32CD32"
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
+      "shorts": 2,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
-      "shirt": 2,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
       "shirt": 6,
       "shorts": 6,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk2": {
+    "black": {
       "shirt": 7,
       "shorts": 7,
       "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "100461"
+    "reserve": {
+      "shirt": 1,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "stripes",
+      "pattern_color": 0
+    },
+    "gk1": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk2": {
+      "shirt": 9,
+      "shorts": 9,
+      "socks": 9,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "1005",
+    "edited": true
   },
   {
     "id": "12130",
@@ -179250,14 +179271,14 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
+      "shorts": 3,
+      "socks": 4,
       "pattern": "plain",
       "pattern_color": null
     },
     "white": {
       "shirt": 3,
-      "shorts": 3,
+      "shorts": 0,
       "socks": 3,
       "pattern": "plain",
       "pattern_color": null
@@ -179290,7 +179311,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "416"
+    "linked_root": "416",
+    "edited": true
   },
   {
     "id": "84400",
@@ -179303,58 +179325,60 @@
       "#ffffff"
     ],
     "palette": [
-      "#E40C24",
-      "#E46C84",
-      "#E43C54",
-      "#FC9CB4",
+      "#FF0000",
       "#FFFFFF",
+      "#E40C24",
+      "#E4546C",
+      "#E42454",
+      "#FC849C",
       "#000000",
       "#00BFFF",
       "#32CD32"
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
+      "shorts": 1,
+      "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
       "shirt": 1,
       "shorts": 1,
       "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk1": {
+    "black": {
       "shirt": 6,
       "shorts": 6,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk2": {
+    "reserve": {
+      "shirt": 5,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk1": {
       "shirt": 7,
       "shorts": 7,
       "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "84679"
+    "gk2": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "2919",
+    "edited": true
   },
   {
     "id": "14694",
@@ -179379,9 +179403,9 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 3,
+      "shorts": 3,
+      "socks": 3,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -179420,7 +179444,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "1047"
+    "linked_root": "1047",
+    "edited": true
   },
   {
     "id": "20106",
@@ -179433,11 +179458,11 @@
       "#080808"
     ],
     "palette": [
-      "#0C0C0C",
       "#FFFFFF",
+      "#080808",
       "#000000",
-      "#FFD700",
-      "#FF8C00"
+      "#FF8C00",
+      "#FFD700"
     ],
     "main": {
       "shirt": 0,
@@ -179447,9 +179472,9 @@
       "pattern_color": null
     },
     "white": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -179461,7 +179486,7 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 0,
+      "shirt": 1,
       "shorts": 1,
       "socks": 1,
       "pattern": "plain",
@@ -179481,7 +179506,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "101158"
+    "linked_root": "1429",
+    "edited": true
   },
   {
     "id": "12816",
@@ -179494,58 +179520,60 @@
       "#ffffff"
     ],
     "palette": [
+      "#DCECF2",
       "#E4CC84",
       "#6CCCFC",
       "#9CB4CC",
       "#E4E4B4",
       "#FFFFFF",
       "#000000",
-      "#32CD32",
+      "#FF8C00",
       "#FFD700"
     ],
     "main": {
-      "shirt": 0,
+      "shirt": 2,
       "shorts": 0,
       "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
       "shirt": 5,
       "shorts": 5,
       "socks": 5,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
-    "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
+    "black": {
       "shirt": 6,
       "shorts": 6,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk2": {
+    "reserve": {
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk1": {
       "shirt": 7,
       "shorts": 7,
       "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "82685"
+    "gk2": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "398",
+    "edited": true
   },
   {
     "id": "16996",
@@ -179609,7 +179637,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "276"
+    "linked_root": "276",
+    "edited": true
   },
   {
     "id": "11998",
@@ -179632,10 +179661,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 3,
+      "socks": 3,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 6,
@@ -179645,16 +179674,16 @@
       "pattern_color": null
     },
     "black": {
-      "shirt": 7,
+      "shirt": 0,
       "shorts": 7,
       "socks": 7,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
     "reserve": {
       "shirt": 2,
-      "shorts": 1,
-      "socks": 1,
+      "shorts": 2,
+      "socks": 2,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -179672,7 +179701,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "800"
+    "linked_root": "800",
+    "edited": true
   },
   {
     "id": "11676",
@@ -179696,10 +179726,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "halves",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 4,
@@ -179716,11 +179746,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 3,
-      "shorts": 3,
-      "socks": 3,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 0,
+      "shorts": 4,
+      "socks": 4,
+      "pattern": "halves",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 6,
@@ -179736,7 +179766,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "1390"
+    "linked_root": "1390",
+    "edited": true
   },
   {
     "id": "5243",
@@ -179761,15 +179792,15 @@
       "#00BFFF"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "hoops",
+      "pattern_color": 3
     },
     "white": {
       "shirt": 6,
-      "shorts": 6,
+      "shorts": 7,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
@@ -179785,8 +179816,8 @@
       "shirt": 1,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "hoops",
+      "pattern_color": 2
     },
     "gk1": {
       "shirt": 8,
@@ -179802,7 +179833,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "130"
+    "linked_root": "130",
+    "edited": true
   },
   {
     "id": "5380",
@@ -179827,10 +179859,10 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
+      "shirt": 3,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "stripes",
       "pattern_color": null
     },
     "white": {
@@ -179841,9 +179873,75 @@
       "pattern_color": null
     },
     "black": {
+      "shirt": 3,
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
+      "pattern_color": null
+    },
+    "reserve": {
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk1": {
+      "shirt": 7,
+      "shorts": 7,
+      "socks": 7,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk2": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "46",
+    "edited": true
+  },
+  {
+    "id": "14861",
+    "name": "AlbinoLeffe Primavera",
+    "country": "Italy",
+    "league_id": "IJ1",
+    "league": "Primavera 1",
+    "colors": [
+      "#25d9d9",
+      "#0000FF"
+    ],
+    "palette": [
+      "#9EE4FF",
+      "#001447",
+      "#0C6CB4",
+      "#549CCC",
+      "#84B4E4",
+      "#FFFFFF",
+      "#000000",
+      "#FF8C00",
+      "#FFD700"
+    ],
+    "main": {
       "shirt": 0,
       "shorts": 0,
       "socks": 0,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "white": {
+      "shirt": 5,
+      "shorts": 5,
+      "socks": 5,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "black": {
+      "shirt": 6,
+      "shorts": 6,
+      "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -179868,73 +179966,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "46"
-  },
-  {
-    "id": "14861",
-    "name": "AlbinoLeffe Primavera",
-    "country": "Italy",
-    "league_id": "IJ1",
-    "league": "Primavera 1",
-    "colors": [
-      "#25d9d9",
-      "#0000FF"
-    ],
-    "palette": [
-      "#25D9D9",
-      "#0000FF",
-      "#B4CCE4",
-      "#0C6CB4",
-      "#549CCC",
-      "#84B4E4",
-      "#FFFFFF",
-      "#000000",
-      "#FF8C00",
-      "#FFD700"
-    ],
-    "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "white": {
-      "shirt": 6,
-      "shorts": 6,
-      "socks": 6,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 7,
-      "shorts": 7,
-      "socks": 7,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
-      "shirt": 8,
-      "shorts": 8,
-      "socks": 8,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk2": {
-      "shirt": 9,
-      "shorts": 9,
-      "socks": 9,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "linked_root": "14861"
+    "linked_root": "4541",
+    "edited": true
   },
   {
     "id": "46",
@@ -179959,10 +179992,10 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
+      "shirt": 3,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "stripes",
       "pattern_color": null
     },
     "white": {
@@ -179973,10 +180006,10 @@
       "pattern_color": null
     },
     "black": {
-      "shirt": 0,
+      "shirt": 3,
       "shorts": 0,
       "socks": 0,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
     "reserve": {
@@ -180000,7 +180033,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "46"
+    "linked_root": "46",
+    "edited": true
   },
   {
     "id": "506",
@@ -180021,9 +180055,9 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
       "pattern_color": null
     },
     "white": {
@@ -180037,15 +180071,15 @@
       "shirt": 2,
       "shorts": 2,
       "socks": 2,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 0
     },
     "reserve": {
       "shirt": 1,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "halves",
+      "pattern_color": 0
     },
     "gk1": {
       "shirt": 3,
@@ -180061,7 +180095,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "506"
+    "linked_root": "506",
+    "edited": true
   },
   {
     "id": "12",
@@ -180084,9 +180119,9 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
+      "shirt": 1,
+      "shorts": 1,
+      "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -180105,9 +180140,9 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -180125,7 +180160,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "12"
+    "linked_root": "12",
+    "edited": true
   },
   {
     "id": "1047",
@@ -180150,9 +180186,9 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 3,
+      "shorts": 3,
+      "socks": 3,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -180191,7 +180227,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "1047"
+    "linked_root": "1047",
+    "edited": true
   },
   {
     "id": "5",
@@ -180215,10 +180252,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 4,
+      "socks": 4,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 4,
@@ -180228,16 +180265,16 @@
       "pattern_color": null
     },
     "black": {
-      "shirt": 5,
+      "shirt": 0,
       "shorts": 5,
       "socks": 5,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 3,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 7,
+      "shorts": 7,
+      "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -180255,7 +180292,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "5"
+    "linked_root": "5",
+    "edited": true
   },
   {
     "id": "800",
@@ -180282,10 +180320,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 3,
+      "socks": 3,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 6,
@@ -180295,16 +180333,16 @@
       "pattern_color": null
     },
     "black": {
-      "shirt": 7,
+      "shirt": 0,
       "shorts": 7,
       "socks": 7,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
     "reserve": {
       "shirt": 2,
-      "shorts": 1,
-      "socks": 1,
+      "shorts": 2,
+      "socks": 2,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -180322,7 +180360,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "800"
+    "linked_root": "800",
+    "edited": true
   },
   {
     "id": "6195",
@@ -180344,9 +180383,9 @@
       "#FFD700"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
+      "shirt": 1,
+      "shorts": 3,
+      "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -180385,7 +180424,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "6195"
+    "linked_root": "6195",
+    "edited": true
   },
   {
     "id": "430",
@@ -180423,16 +180463,16 @@
       "pattern_color": null
     },
     "black": {
-      "shirt": 5,
+      "shirt": 0,
       "shorts": 5,
       "socks": 5,
       "pattern": "plain",
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 3,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -180450,7 +180490,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "430"
+    "linked_root": "430",
+    "edited": true
   },
   {
     "id": "398",
@@ -180474,7 +180515,7 @@
       "#FFD700"
     ],
     "main": {
-      "shirt": 0,
+      "shirt": 2,
       "shorts": 0,
       "socks": 0,
       "pattern": "plain",
@@ -180484,7 +180525,7 @@
       "shirt": 5,
       "shorts": 5,
       "socks": 5,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
     "black": {
@@ -180515,7 +180556,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "398"
+    "linked_root": "398",
+    "edited": true
   },
   {
     "id": "1025",
@@ -180540,14 +180582,14 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 5,
+      "socks": 5,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 5,
-      "shorts": 5,
+      "shorts": 6,
       "socks": 5,
       "pattern": "plain",
       "pattern_color": null
@@ -180560,11 +180602,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 1,
+      "shirt": 0,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 7,
@@ -180580,7 +180622,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "1025"
+    "linked_root": "1025",
+    "edited": true
   },
   {
     "id": "6574",
@@ -180607,12 +180650,12 @@
       "shirt": 0,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 6,
-      "shorts": 6,
+      "shorts": 1,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
@@ -180625,10 +180668,10 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 2,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
+      "shirt": 0,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "stripes",
       "pattern_color": null
     },
     "gk1": {
@@ -180645,7 +180688,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "6574"
+    "linked_root": "6574",
+    "edited": true
   },
   {
     "id": "252",
@@ -180670,11 +180714,11 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 3,
+      "shorts": 3,
+      "socks": 3,
+      "pattern": "halves",
+      "pattern_color": 2
     },
     "white": {
       "shirt": 6,
@@ -180691,11 +180735,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 3,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "halves",
+      "pattern_color": 2
     },
     "gk1": {
       "shirt": 8,
@@ -180711,7 +180755,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "252"
+    "linked_root": "252",
+    "edited": true
   },
   {
     "id": "410",
@@ -180737,8 +180782,8 @@
       "shirt": 0,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 1,
@@ -180755,11 +180800,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 3,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 6,
@@ -180775,7 +180820,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "410"
+    "linked_root": "410",
+    "edited": true
   },
   {
     "id": "130",
@@ -180800,15 +180846,15 @@
       "#00BFFF"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "hoops",
+      "pattern_color": 3
     },
     "white": {
       "shirt": 6,
-      "shorts": 6,
+      "shorts": 7,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
@@ -180824,8 +180870,8 @@
       "shirt": 1,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "hoops",
+      "pattern_color": 2
     },
     "gk1": {
       "shirt": 8,
@@ -180841,7 +180887,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "130"
+    "linked_root": "130",
+    "edited": true
   },
   {
     "id": "416",
@@ -180863,14 +180910,14 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
+      "shorts": 3,
+      "socks": 4,
       "pattern": "plain",
       "pattern_color": null
     },
     "white": {
       "shirt": 3,
-      "shorts": 3,
+      "shorts": 0,
       "socks": 3,
       "pattern": "plain",
       "pattern_color": null
@@ -180903,7 +180950,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "416"
+    "linked_root": "416",
+    "edited": true
   },
   {
     "id": "1390",
@@ -180927,10 +180975,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "halves",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 4,
@@ -180947,11 +180995,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 3,
-      "shorts": 3,
-      "socks": 3,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 0,
+      "shorts": 4,
+      "socks": 4,
+      "pattern": "halves",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 6,
@@ -180967,7 +181015,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "1390"
+    "linked_root": "1390",
+    "edited": true
   },
   {
     "id": "607",
@@ -180992,10 +181041,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 3,
+      "socks": 3,
+      "pattern": "sash",
+      "pattern_color": 3
     },
     "white": {
       "shirt": 5,
@@ -181012,11 +181061,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 2,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 3,
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "sash",
+      "pattern_color": 0
     },
     "gk1": {
       "shirt": 6,
@@ -181032,7 +181081,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "607"
+    "linked_root": "607",
+    "edited": true
   },
   {
     "id": "8970",
@@ -181188,10 +181238,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 2,
+      "socks": 1,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 6,
@@ -181211,6 +181261,132 @@
       "shirt": 1,
       "shorts": 1,
       "socks": 1,
+      "pattern": "stripes",
+      "pattern_color": 0
+    },
+    "gk1": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk2": {
+      "shirt": 9,
+      "shorts": 9,
+      "socks": 9,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "1005",
+    "edited": true
+  },
+  {
+    "id": "75901",
+    "name": "Fiorentina Under 18",
+    "country": "Italy",
+    "league_id": "ITJ7",
+    "league": "Campionato Under 18",
+    "colors": [],
+    "palette": [
+      "#5C2180",
+      "#FFFFFF",
+      "#E4CCE4",
+      "#E43C24",
+      "#9C84B4",
+      "#000000",
+      "#00BFFF",
+      "#32CD32"
+    ],
+    "main": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "white": {
+      "shirt": 1,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "black": {
+      "shirt": 0,
+      "shorts": 5,
+      "socks": 5,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "reserve": {
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk1": {
+      "shirt": 6,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk2": {
+      "shirt": 7,
+      "shorts": 7,
+      "socks": 7,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "430",
+    "edited": true
+  },
+  {
+    "id": "76091",
+    "name": "Atalanta Under 18",
+    "country": "Italy",
+    "league_id": "ITJ7",
+    "league": "Campionato Under 18",
+    "colors": [],
+    "palette": [
+      "#295CB0",
+      "#1E191A",
+      "#157A52",
+      "#FCFCFC",
+      "#549CCC",
+      "#CCE4E4",
+      "#FFFFFF",
+      "#000000",
+      "#FFD700",
+      "#FF8C00"
+    ],
+    "main": {
+      "shirt": 0,
+      "shorts": 3,
+      "socks": 3,
+      "pattern": "stripes",
+      "pattern_color": 1
+    },
+    "white": {
+      "shirt": 6,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "black": {
+      "shirt": 0,
+      "shorts": 7,
+      "socks": 7,
+      "pattern": "stripes",
+      "pattern_color": null
+    },
+    "reserve": {
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -181228,129 +181404,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "1005"
-  },
-  {
-    "id": "75901",
-    "name": "Fiorentina Under 18",
-    "country": "Italy",
-    "league_id": "ITJ7",
-    "league": "Campionato Under 18",
-    "colors": [],
-    "palette": [
-      "#6C3C84",
-      "#E4CCE4",
-      "#E43C24",
-      "#9C84B4",
-      "#FFFFFF",
-      "#000000",
-      "#00BFFF",
-      "#32CD32"
-    ],
-    "main": {
-      "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
-      "shirt": 2,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
-      "shirt": 6,
-      "shorts": 6,
-      "socks": 6,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk2": {
-      "shirt": 7,
-      "shorts": 7,
-      "socks": 7,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "linked_root": "75901"
-  },
-  {
-    "id": "76091",
-    "name": "Atalanta Under 18",
-    "country": "Italy",
-    "league_id": "ITJ7",
-    "league": "Campionato Under 18",
-    "colors": [],
-    "palette": [
-      "#FCFCFC",
-      "#0C6CB4",
-      "#549CCC",
-      "#CCE4E4",
-      "#FFFFFF",
-      "#000000",
-      "#FF8C00",
-      "#FFD700"
-    ],
-    "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
-      "shirt": 6,
-      "shorts": 6,
-      "socks": 6,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk2": {
-      "shirt": 7,
-      "shorts": 7,
-      "socks": 7,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "linked_root": "76091"
+    "linked_root": "800",
+    "edited": true
   },
   {
     "id": "91714",
@@ -181360,7 +181415,8 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#B42424",
+      "#C70E0E",
+      "#16106E",
       "#0C3C54",
       "#3C243C",
       "#842424",
@@ -181371,47 +181427,48 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 5,
+      "socks": 5,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
       "shirt": 5,
-      "shorts": 5,
+      "shorts": 6,
       "socks": 5,
       "pattern": "plain",
       "pattern_color": null
     },
-    "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
+    "black": {
       "shirt": 6,
       "shorts": 6,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk2": {
+    "reserve": {
+      "shirt": 0,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "stripes",
+      "pattern_color": 1
+    },
+    "gk1": {
       "shirt": 7,
       "shorts": 7,
       "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "91714"
+    "gk2": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "1025",
+    "edited": true
   },
   {
     "id": "91715",
@@ -181421,8 +181478,8 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#B40C24",
-      "#0C2454",
+      "#AB0A0A",
+      "#0F0F6B",
       "#CC3C54",
       "#CC6C84",
       "#FFFFFF",
@@ -181432,10 +181489,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "halves",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 4,
@@ -181452,11 +181509,11 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 3,
-      "shorts": 3,
-      "socks": 3,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 0,
+      "shorts": 4,
+      "socks": 4,
+      "pattern": "halves",
+      "pattern_color": 1
     },
     "gk1": {
       "shirt": 6,
@@ -181472,7 +181529,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "91715"
+    "linked_root": "1390",
+    "edited": true
   },
   {
     "id": "101158",
@@ -181482,11 +181540,11 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#0C0C0C",
       "#FFFFFF",
+      "#080808",
       "#000000",
-      "#FFD700",
-      "#FF8C00"
+      "#FF8C00",
+      "#FFD700"
     ],
     "main": {
       "shirt": 0,
@@ -181496,9 +181554,9 @@
       "pattern_color": null
     },
     "white": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -181510,7 +181568,7 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 0,
+      "shirt": 1,
       "shorts": 1,
       "socks": 1,
       "pattern": "plain",
@@ -181530,7 +181588,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "101158"
+    "linked_root": "1429",
+    "edited": true
   },
   {
     "id": "144180",
@@ -181540,14 +181599,77 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#0C3C6C",
-      "#54849C",
-      "#3C5484",
-      "#849CB4",
+      "#007FFF",
       "#FFFFFF",
+      "#A30808",
+      "#0C3C6C",
+      "#3C6C84",
+      "#6C849C",
       "#000000",
       "#FFD700",
-      "#FF8C00"
+      "#32CD32"
+    ],
+    "main": {
+      "shirt": 3,
+      "shorts": 3,
+      "socks": 3,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "white": {
+      "shirt": 1,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "black": {
+      "shirt": 6,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "reserve": {
+      "shirt": 2,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk1": {
+      "shirt": 7,
+      "shorts": 7,
+      "socks": 7,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk2": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "1047",
+    "edited": true
+  },
+  {
+    "id": "111246",
+    "name": "Frosinone Under 18",
+    "country": "Italy",
+    "league_id": "ITJ7",
+    "league": "Campionato Under 18",
+    "colors": [],
+    "palette": [
+      "#FFDD00",
+      "#004393",
+      "#0C6CB4",
+      "#CCCCE4",
+      "#FFFFFF",
+      "#000000",
+      "#32CD32",
+      "#EE82EE"
     ],
     "main": {
       "shirt": 0,
@@ -181571,9 +181693,9 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 3,
-      "shorts": 3,
-      "socks": 3,
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -181591,20 +181713,85 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "144180"
+    "linked_root": "8970",
+    "edited": true
   },
   {
-    "id": "111246",
-    "name": "Frosinone Under 18",
+    "id": "76092",
+    "name": "Genoa Under 18",
     "country": "Italy",
     "league_id": "ITJ7",
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#0C3C9C",
-      "#FCE40C",
-      "#0C6CB4",
-      "#CCCCE4",
+      "#07078A",
+      "#E60707",
+      "#B42424",
+      "#0C243C",
+      "#FCCC0C",
+      "#E4840C",
+      "#FFFFFF",
+      "#000000",
+      "#00BFFF",
+      "#32CD32"
+    ],
+    "main": {
+      "shirt": 3,
+      "shorts": 3,
+      "socks": 3,
+      "pattern": "halves",
+      "pattern_color": 2
+    },
+    "white": {
+      "shirt": 6,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "black": {
+      "shirt": 7,
+      "shorts": 7,
+      "socks": 7,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "reserve": {
+      "shirt": 3,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "halves",
+      "pattern_color": 2
+    },
+    "gk1": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk2": {
+      "shirt": 9,
+      "shorts": 9,
+      "socks": 9,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "252",
+    "edited": true
+  },
+  {
+    "id": "91428",
+    "name": "Hellas Verona Under 18",
+    "country": "Italy",
+    "league_id": "ITJ7",
+    "league": "Campionato Under 18",
+    "colors": [],
+    "palette": [
+      "#F2E63A",
+      "#5338DE",
+      "#FCCC0C",
+      "#FCFC0C",
       "#FFFFFF",
       "#000000",
       "#32CD32",
@@ -181652,127 +181839,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "111246"
-  },
-  {
-    "id": "76092",
-    "name": "Genoa Under 18",
-    "country": "Italy",
-    "league_id": "ITJ7",
-    "league": "Campionato Under 18",
-    "colors": [],
-    "palette": [
-      "#B42424",
-      "#0C243C",
-      "#FCCC0C",
-      "#E4840C",
-      "#FFFFFF",
-      "#000000",
-      "#00BFFF",
-      "#32CD32"
-    ],
-    "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
-      "shirt": 2,
-      "shorts": 2,
-      "socks": 2,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
-      "shirt": 6,
-      "shorts": 6,
-      "socks": 6,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk2": {
-      "shirt": 7,
-      "shorts": 7,
-      "socks": 7,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "linked_root": "76092"
-  },
-  {
-    "id": "91428",
-    "name": "Hellas Verona Under 18",
-    "country": "Italy",
-    "league_id": "ITJ7",
-    "league": "Campionato Under 18",
-    "colors": [],
-    "palette": [
-      "#FCCC0C",
-      "#FCFC0C",
-      "#FFFFFF",
-      "#000000",
-      "#00BFFF",
-      "#32CD32"
-    ],
-    "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "white": {
-      "shirt": 2,
-      "shorts": 2,
-      "socks": 2,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 3,
-      "shorts": 3,
-      "socks": 3,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk2": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "linked_root": "91428"
+    "linked_root": "276",
+    "edited": true
   },
   {
     "id": "75868",
@@ -181782,58 +181850,60 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
+      "#000000",
+      "#0055A0",
+      "#CFB013",
       "#0C249C",
       "#B4B4E4",
       "#0C0C54",
-      "#3C54B4",
       "#FFFFFF",
-      "#000000",
-      "#FFD700",
-      "#FF8C00"
+      "#00BFFF",
+      "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
+      "shirt": 3,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "stripes",
       "pattern_color": null
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
       "shirt": 6,
       "shorts": 6,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk2": {
+    "black": {
+      "shirt": 3,
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
+      "pattern_color": null
+    },
+    "reserve": {
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk1": {
       "shirt": 7,
       "shorts": 7,
       "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "75868"
+    "gk2": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "46",
+    "edited": true
   },
   {
     "id": "143438",
@@ -181843,23 +181913,23 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#0C0C0C",
       "#FFFFFF",
+      "#0A0909",
       "#000000",
-      "#FFD700",
-      "#FF8C00"
+      "#FF8C00",
+      "#FFD700"
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
       "pattern_color": null
     },
     "white": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -181867,15 +181937,15 @@
       "shirt": 2,
       "shorts": 2,
       "socks": 2,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 0
     },
     "reserve": {
-      "shirt": 0,
+      "shirt": 1,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "halves",
+      "pattern_color": 0
     },
     "gk1": {
       "shirt": 3,
@@ -181891,7 +181961,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "143438"
+    "linked_root": "506",
+    "edited": true
   },
   {
     "id": "82685",
@@ -181901,58 +181972,60 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
+      "#DCECF2",
       "#E4CC84",
       "#6CCCFC",
       "#9CB4CC",
       "#E4E4B4",
       "#FFFFFF",
       "#000000",
-      "#32CD32",
+      "#FF8C00",
       "#FFD700"
     ],
     "main": {
-      "shirt": 0,
+      "shirt": 2,
       "shorts": 0,
       "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
       "shirt": 5,
       "shorts": 5,
       "socks": 5,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
-    "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
+    "black": {
       "shirt": 6,
       "shorts": 6,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk2": {
+    "reserve": {
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk1": {
       "shirt": 7,
       "shorts": 7,
       "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "82685"
+    "gk2": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "398",
+    "edited": true
   },
   {
     "id": "100461",
@@ -181962,58 +182035,61 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#0C2454",
+      "#F7FF08",
+      "#E80000",
+      "#080857",
       "#6C6C54",
       "#9C846C",
       "#9C0C24",
       "#FFFFFF",
       "#000000",
       "#00BFFF",
-      "#FFD700"
+      "#32CD32"
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
+      "shorts": 2,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
-      "shirt": 2,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
       "shirt": 6,
       "shorts": 6,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk2": {
+    "black": {
       "shirt": 7,
       "shorts": 7,
       "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "100461"
+    "reserve": {
+      "shirt": 1,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "stripes",
+      "pattern_color": 0
+    },
+    "gk1": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk2": {
+      "shirt": 9,
+      "shorts": 9,
+      "socks": 9,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "1005",
+    "edited": true
   },
   {
     "id": "76093",
@@ -182023,10 +182099,10 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
+      "#B50909",
+      "#050505",
       "#E42424",
       "#842424",
-      "#B42424",
-      "#0C240C",
       "#FFFFFF",
       "#000000",
       "#00BFFF",
@@ -182034,10 +182110,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 4,
+      "socks": 4,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 4,
@@ -182047,16 +182123,16 @@
       "pattern_color": null
     },
     "black": {
-      "shirt": 5,
+      "shirt": 0,
       "shorts": 5,
       "socks": 5,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 7,
+      "shorts": 7,
+      "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -182074,7 +182150,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "76093"
+    "linked_root": "5",
+    "edited": true
   },
   {
     "id": "84679",
@@ -182084,58 +182161,60 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#E40C24",
-      "#E46C84",
-      "#E43C54",
-      "#FC9CB4",
+      "#FF0000",
       "#FFFFFF",
+      "#E40C24",
+      "#E4546C",
+      "#E42454",
+      "#FC849C",
       "#000000",
       "#00BFFF",
       "#32CD32"
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
+      "shorts": 1,
+      "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
       "shirt": 1,
       "shorts": 1,
       "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk1": {
+    "black": {
       "shirt": 6,
       "shorts": 6,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk2": {
+    "reserve": {
+      "shirt": 5,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk1": {
       "shirt": 7,
       "shorts": 7,
       "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "84679"
+    "gk2": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "2919",
+    "edited": true
   },
   {
     "id": "100431",
@@ -182145,7 +182224,7 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#0C9CE4",
+      "#0080FF",
       "#3CB4E4",
       "#9CE4FC",
       "#E4FCFC",
@@ -182155,9 +182234,9 @@
       "#FFD700"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
+      "shirt": 1,
+      "shorts": 3,
+      "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -182196,7 +182275,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "100431"
+    "linked_root": "6195",
+    "edited": true
   },
   {
     "id": "84451",
@@ -182206,58 +182286,61 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
+      "#FFFB00",
+      "#0000FF",
       "#FCCC0C",
       "#243C9C",
       "#CCB424",
-      "#545484",
+      "#848454",
       "#FFFFFF",
       "#000000",
-      "#00BFFF",
-      "#32CD32"
+      "#32CD32",
+      "#00BFFF"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shirt": 2,
+      "shorts": 2,
+      "socks": 2,
+      "pattern": "hoops",
+      "pattern_color": 3
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
-      "shirt": 3,
-      "shorts": 3,
-      "socks": 3,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "gk1": {
       "shirt": 6,
-      "shorts": 6,
+      "shorts": 7,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk2": {
+    "black": {
       "shirt": 7,
       "shorts": 7,
       "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "84451"
+    "reserve": {
+      "shirt": 1,
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "hoops",
+      "pattern_color": 2
+    },
+    "gk1": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk2": {
+      "shirt": 9,
+      "shorts": 9,
+      "socks": 9,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "130",
+    "edited": true
   },
   {
     "id": "76094",
@@ -182267,8 +182350,8 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#FCB40C",
-      "#9C2424",
+      "#FFB22E",
+      "#9E142B",
       "#CC9C0C",
       "#B45424",
       "#FFFFFF",
@@ -182277,9 +182360,9 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
+      "shirt": 1,
+      "shorts": 1,
+      "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -182298,9 +182381,9 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 1,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -182318,7 +182401,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "76094"
+    "linked_root": "12",
+    "edited": true
   },
   {
     "id": "75867",
@@ -182328,58 +182412,60 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
+      "#099902",
+      "#000000",
       "#0CB454",
       "#0C843C",
       "#243C24",
       "#240C24",
       "#FFFFFF",
-      "#000000",
       "#FFD700",
       "#FF8C00"
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 1,
+      "socks": 1,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
-      "shirt": 4,
-      "shorts": 4,
-      "socks": 4,
+      "shirt": 6,
+      "shorts": 1,
+      "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
     "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "reserve": {
       "shirt": 1,
       "shorts": 1,
       "socks": 1,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk1": {
-      "shirt": 6,
+    "reserve": {
+      "shirt": 0,
       "shorts": 6,
       "socks": 6,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
-    "gk2": {
+    "gk1": {
       "shirt": 7,
       "shorts": 7,
       "socks": 7,
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "75867"
+    "gk2": {
+      "shirt": 8,
+      "shorts": 8,
+      "socks": 8,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "linked_root": "6574",
+    "edited": true
   },
   {
     "id": "75900",
@@ -182389,10 +182475,9 @@
     "league": "Campionato Under 18",
     "colors": [],
     "palette": [
-      "#842424",
+      "#A62D2D",
       "#E49C0C",
-      "#CC6C0C",
-      "#B46C6C",
+      "#CC8454",
       "#FFFFFF",
       "#000000",
       "#00BFFF",
@@ -182400,22 +182485,22 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "white": {
-      "shirt": 4,
-      "shorts": 4,
+      "shorts": 3,
       "socks": 4,
       "pattern": "plain",
       "pattern_color": null
     },
+    "white": {
+      "shirt": 3,
+      "shorts": 0,
+      "socks": 3,
+      "pattern": "plain",
+      "pattern_color": null
+    },
     "black": {
-      "shirt": 5,
-      "shorts": 5,
-      "socks": 5,
+      "shirt": 4,
+      "shorts": 4,
+      "socks": 4,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -182427,20 +182512,21 @@
       "pattern_color": null
     },
     "gk1": {
+      "shirt": 5,
+      "shorts": 5,
+      "socks": 5,
+      "pattern": "plain",
+      "pattern_color": null
+    },
+    "gk2": {
       "shirt": 6,
       "shorts": 6,
       "socks": 6,
       "pattern": "plain",
       "pattern_color": null
     },
-    "gk2": {
-      "shirt": 7,
-      "shorts": 7,
-      "socks": 7,
-      "pattern": "plain",
-      "pattern_color": null
-    },
-    "linked_root": "75900"
+    "linked_root": "416",
+    "edited": true
   },
   {
     "id": "4172",
@@ -182548,9 +182634,9 @@
       "pattern_color": null
     },
     "reserve": {
-      "shirt": 2,
-      "shorts": 1,
-      "socks": 1,
+      "shirt": 0,
+      "shorts": 0,
+      "socks": 0,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -182568,7 +182654,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "458"
+    "linked_root": "458",
+    "edited": true
   },
   {
     "id": "2239",
@@ -183366,8 +183453,8 @@
       "shirt": 0,
       "shorts": 0,
       "socks": 0,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 4,
@@ -183404,7 +183491,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "4171"
+    "linked_root": "4171",
+    "edited": true
   },
   {
     "id": "5587",
@@ -183619,7 +183707,7 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
+      "shirt": 1,
       "shorts": 0,
       "socks": 0,
       "pattern": "plain",
@@ -183660,7 +183748,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "2655"
+    "linked_root": "2655",
+    "edited": true
   },
   {
     "id": "20519",
@@ -183684,7 +183773,7 @@
       "#FF8C00"
     ],
     "main": {
-      "shirt": 0,
+      "shirt": 2,
       "shorts": 0,
       "socks": 0,
       "pattern": "plain",
@@ -183725,7 +183814,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "20519"
+    "linked_root": "20519",
+    "edited": true
   },
   {
     "id": "41110",
@@ -183751,10 +183841,10 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "shorts": 3,
+      "socks": 3,
+      "pattern": "stripes",
+      "pattern_color": 1
     },
     "white": {
       "shirt": 6,
@@ -183764,16 +183854,16 @@
       "pattern_color": null
     },
     "black": {
-      "shirt": 7,
+      "shirt": 0,
       "shorts": 7,
       "socks": 7,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
     "reserve": {
       "shirt": 2,
-      "shorts": 1,
-      "socks": 1,
+      "shorts": 2,
+      "socks": 2,
       "pattern": "plain",
       "pattern_color": null
     },
@@ -183791,7 +183881,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "800"
+    "linked_root": "800",
+    "edited": true
   },
   {
     "id": "3522",
@@ -184070,7 +184161,7 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
+      "shirt": 1,
       "shorts": 0,
       "socks": 0,
       "pattern": "plain",
@@ -184111,7 +184202,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "839"
+    "linked_root": "839",
+    "edited": true
   },
   {
     "id": "45894",
@@ -184201,7 +184293,7 @@
       "#FFD700"
     ],
     "main": {
-      "shirt": 0,
+      "shirt": 4,
       "shorts": 0,
       "socks": 0,
       "pattern": "plain",
@@ -184242,7 +184334,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "22045"
+    "linked_root": "22045",
+    "edited": true
   },
   {
     "id": "18642",
@@ -185045,10 +185138,10 @@
       "#32CD32"
     ],
     "main": {
-      "shirt": 0,
-      "shorts": 0,
-      "socks": 0,
-      "pattern": "plain",
+      "shirt": 3,
+      "shorts": 6,
+      "socks": 6,
+      "pattern": "stripes",
       "pattern_color": null
     },
     "white": {
@@ -185059,10 +185152,10 @@
       "pattern_color": null
     },
     "black": {
-      "shirt": 0,
+      "shirt": 3,
       "shorts": 0,
       "socks": 0,
-      "pattern": "plain",
+      "pattern": "stripes",
       "pattern_color": null
     },
     "reserve": {
@@ -185086,7 +185179,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "46"
+    "linked_root": "46",
+    "edited": true
   },
   {
     "id": "1627",
@@ -186340,9 +186434,9 @@
     ],
     "main": {
       "shirt": 0,
-      "shorts": 1,
-      "socks": 1,
-      "pattern": "plain",
+      "shorts": 0,
+      "socks": 0,
+      "pattern": "stripes",
       "pattern_color": null
     },
     "white": {
@@ -186356,15 +186450,15 @@
       "shirt": 2,
       "shorts": 2,
       "socks": 2,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "stripes",
+      "pattern_color": 0
     },
     "reserve": {
       "shirt": 1,
       "shorts": 1,
       "socks": 1,
-      "pattern": "plain",
-      "pattern_color": null
+      "pattern": "halves",
+      "pattern_color": 0
     },
     "gk1": {
       "shirt": 3,
@@ -186380,7 +186474,8 @@
       "pattern": "plain",
       "pattern_color": null
     },
-    "linked_root": "506"
+    "linked_root": "506",
+    "edited": true
   },
   {
     "id": "132806",
